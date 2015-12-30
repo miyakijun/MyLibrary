@@ -15,7 +15,7 @@ public class MiyakiUtil {
         return  "miyaki string";
     }
 
-    public void setview(Context cx){
+    public static void setview(Context cx){
 
         final Dialog dialog = new Dialog(cx);
         dialog.setContentView(R.layout.alert);
