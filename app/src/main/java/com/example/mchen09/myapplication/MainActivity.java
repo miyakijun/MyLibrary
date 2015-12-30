@@ -1,18 +1,26 @@
-package com.example.mchen09.mylibrary;
+package com.example.mchen09.myapplication;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-/**
- * Created by MChen09 on 2015/12/30.
- */
-public class MiyakiUtil {
-    public static  String getMessage(){
-        return  "miyaki string";
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        RelativeLayout rl = (RelativeLayout) findViewById(R.id.rl);
+        View v = getLayoutInflater().inflate(R.layout.layout, null);
+        rl.addView(v);
+
+        setview();
     }
 
     public void setview(Context cx){
@@ -38,6 +46,7 @@ public class MiyakiUtil {
 
         dialog.show();
     }
+
 
 
 }
