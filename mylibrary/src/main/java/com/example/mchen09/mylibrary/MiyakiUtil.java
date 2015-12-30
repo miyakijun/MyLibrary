@@ -25,7 +25,7 @@ public class MiyakiUtil {
         TextView text = (TextView) dialog.findViewById(R.id.text);
         text.setText("Android custom dialog example!");
         ImageView image = (ImageView) dialog.findViewById(R.id.image);
-        image.setImageResource(R.mipmap.ic_launcher);
+        image.setImageResource(R.mipmap.b);
 
         Button dialogButton = (Button) dialog.findViewById(R.id.dialogButtonOK);
         // if button is clicked, close the custom dialog
